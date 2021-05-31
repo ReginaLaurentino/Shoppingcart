@@ -1,0 +1,36 @@
+E:\UTN\PROG 3\Migracion\bin\Debug\Migracion.exe.config
+E:\UTN\PROG 3\Migracion\bin\Debug\Migracion.exe
+E:\UTN\PROG 3\Migracion\bin\Debug\Migracion.pdb
+E:\UTN\PROG 3\Migracion\bin\Debug\Dominio.exe
+E:\UTN\PROG 3\Migracion\bin\Debug\Negocio.exe
+E:\UTN\PROG 3\Migracion\bin\Debug\Dominio.pdb
+E:\UTN\PROG 3\Migracion\bin\Debug\Dominio.exe.config
+E:\UTN\PROG 3\Migracion\bin\Debug\Negocio.pdb
+E:\UTN\PROG 3\Migracion\bin\Debug\Negocio.exe.config
+E:\UTN\PROG 3\Migracion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.Agregar.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.AgregarCategoria.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.AgregarMarca.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.Detalle.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.Eliminar.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.Modificar.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.Presentacion.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.Properties.Resources.resources
+E:\UTN\PROG 3\Migracion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+E:\UTN\PROG 3\Migracion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+E:\UTN\PROG 3\Migracion\obj\Debug\Presentacion.csproj.CopyComplete
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.exe
+E:\UTN\PROG 3\Migracion\obj\Debug\Migracion.pdb
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.Agregar.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.AgregarCategoria.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.AgregarMarca.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.Detalle.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.Eliminar.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.Modificar.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.Presentacion.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.Properties.Resources.resources
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Presentacion.csproj.GenerateResource.cache
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.exe
+E:\UTN\PROG 3\Shopping cart\obj\Debug\Migracion.pdb
