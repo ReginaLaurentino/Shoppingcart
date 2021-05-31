@@ -129,6 +129,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="ListaProd.aspx" />
     <Content Include="Error.aspx" />
+    <Content Include="Detalleproducto.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -226,6 +227,13 @@
     </Compile>
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalleproducto.aspx.cs">
+      <DependentUpon>Detalleproducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalleproducto.aspx.designer.cs">
+      <DependentUpon>Detalleproducto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

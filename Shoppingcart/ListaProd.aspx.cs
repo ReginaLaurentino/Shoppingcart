@@ -19,6 +19,8 @@ namespace Shoppingcart
             {
                
                 lista = negocio.Presentacion();
+
+                Session.Add("listaprod", lista);
             }
             catch (Exception ex )
             {
