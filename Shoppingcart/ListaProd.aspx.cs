@@ -11,15 +11,17 @@ namespace Shoppingcart
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-     public List<Articulo> lista;
+     
+       
+        public List<Articulo> lista = new List<Articulo>();
        
         protected void Page_Load(object sender, EventArgs e) {
             ConsultaPresentacion negocio = new ConsultaPresentacion();
+            
             try
             {
-               
+              
                 lista = negocio.Presentacion();
-
                 Session.Add("listaprod", lista);
             }
             catch (Exception ex )
