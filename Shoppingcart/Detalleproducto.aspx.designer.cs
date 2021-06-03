@@ -33,7 +33,6 @@ namespace Shoppingcart
         protected global::System.Web.UI.WebControls.Label lblDescripcion;
 
         /// <summary>
-<<<<<<< HEAD
         /// Control txtCantidad.
         /// </summary>
         /// <remarks>
@@ -43,8 +42,6 @@ namespace Shoppingcart
         protected global::System.Web.UI.WebControls.TextBox txtCantidad;
 
         /// <summary>
-=======
->>>>>>> 464e9d32b369bfffbe5768b98ffef46e63381cd3
         /// Control Agregar.
         /// </summary>
         /// <remarks>

@@ -11,8 +11,4 @@
 
    
 
-    <asp:Button ID="Agregar" runat="server" Text="Agregar al carrito" OnClick="Agregar_Click" />
-
-   
-
 </asp:Content>
