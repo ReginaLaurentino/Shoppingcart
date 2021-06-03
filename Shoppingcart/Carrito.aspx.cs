@@ -20,7 +20,7 @@ namespace Shoppingcart
             try
             {
                 carrito = (List<Cart>)Session["listacarrito"];
-                
+                //holis
 
             }
             catch (Exception)
