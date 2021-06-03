@@ -3,6 +3,7 @@
     <h1>Mi carrito</h1>
     <asp:Label ID="vacio" runat="server" Text=""></asp:Label>
   
+<<<<<<< HEAD
     <%foreach ( Shoppingcart.Cart item in carrito)
                 {%>
               
@@ -11,6 +12,13 @@
                           <p><%= item.Articulo.Precio %></p>
                           <p><%= item.Quantity%></p>
                          
+=======
+    <%foreach ( Dominio.Articulo item in carrito)
+                {%>
+              
+                          <h5> <%= item.Nombre %></h5>
+                          <p><%= item.Precio %></p>
+>>>>>>> 464e9d32b369bfffbe5768b98ffef46e63381cd3
                          
            <%  } %>   
                      
