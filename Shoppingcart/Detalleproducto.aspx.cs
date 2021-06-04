@@ -40,7 +40,7 @@ namespace Shoppingcart
 
             try
             {
-                shoppingcart.Add(new Cart { Articulo = aux, Quantity = cantidad });
+                shoppingcart.Add(new Cart { Articulo = aux, Quantity = cantidad, subtotal=aux.Precio*cantidad });
                 Session.Add("listacarrito", shoppingcart);
                 Response.Redirect("Carrito.aspx");
                 

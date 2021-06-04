@@ -9,9 +9,13 @@
                           <h5> <%= item.Articulo.Nombre %></h5>
                 
                           <p><%= item.Articulo.Precio %></p>
+
+                          <asp:TextBox TextMode="Number" ID="suma" type="number" runat="server" min="1" max="20" step="1" Text=<%= item.Quantity%>/>
                           <p><%= item.Quantity%></p>
+                          <p><%= item.subtotal %></p>
                          
                          
            <%  } %>   
+          <asp:Label ID="lblTotal" runat="server" Text=""></asp:Label>
                      
 </asp:Content>
