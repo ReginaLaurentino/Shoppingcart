@@ -16,7 +16,7 @@ namespace Shoppingcart
         
         public static List<Cart> shoppingcart = new List<Cart>();
         int id = 0;
-        int  cantidad = 0;
+        int  cantidad = 1;
         
         Articulo seleccionado, aux;
         protected void Page_Load(object sender, EventArgs e)
@@ -25,10 +25,14 @@ namespace Shoppingcart
             List<Articulo> lista = (List<Articulo>)Session["listaprod"];
             seleccionado = lista.Find(x => x.ID == id);
             //seleccionado = lista.FirstOrDefault(x => x.Articulo.ID == id).Articulo;
-            lblSeleccionado.Text = seleccionado.Nombre;
-            lblDescripcion.Text = seleccionado.Descripcion;
+            
+            imagen.ImageUrl = seleccionado.UrlImagen;
+            lblnombre.Text = seleccionado.Nombre;
+            lblprecio.Text = seleccionado.Precio.ToString();
+            lblmarca.Text = seleccionado.Marcas.Nombre;
+            lbldescrip.Text = seleccionado.Descripcion;
 
-            cantidad = Convert.ToInt32(txtCantidad.Text);
+            //cantidad = Convert.ToInt32(txtCantidad.Text);
 
            aux = seleccionado;
             
