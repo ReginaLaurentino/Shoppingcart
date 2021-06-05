@@ -26,12 +26,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="/">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         <a class="nav-link" href="/ListaProd">Productos</a>
                         <a class="nav-link" href="/Carrito">Mi Carrito</a>
-                        <a class="nav-link" href="/About">About</a>
-                        <a class="nav-link" href="/Contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -41,11 +38,14 @@
 
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+           </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+            <footer class="py-4 bg-dark flex-shrink-0" position="absolute" bottom="0" width="100%" height="40px">
+                    <div class="container text-center  bg-dark">
+                      <p class="text-muted">Laura Elena Srebernich & Yesica Regina Laurentino Goncalves</p>
+                    </div>
             </footer>
+                 
         </div>
 
     </form>
