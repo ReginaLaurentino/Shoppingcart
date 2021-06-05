@@ -16,3 +16,12 @@ C:\Users\Laura\Desktop\tp4 pro3\Dominio\obj\Debug\Dominio.csproj.GenerateResourc
 C:\Users\Laura\Desktop\tp4 pro3\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Laura\Desktop\tp4 pro3\Dominio\obj\Debug\Dominio.dll
 C:\Users\Laura\Desktop\tp4 pro3\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\bin\Debug\Dominio.dll.config
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\bin\Debug\Dominio.dll
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\obj\Debug\Dominio.Properties.Resources.resources
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\obj\Debug\Dominio.csproj.GenerateResource.cache
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\obj\Debug\Dominio.dll
+C:\Users\Laura\Desktop\Prog3 TP4 carpeta2\Shoppingcart\Dominio\obj\Debug\Dominio.pdb

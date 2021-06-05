@@ -8,8 +8,10 @@ namespace Shoppingcart
 {
     public class Cart
     {
-       public Articulo Articulo { get; set; } 
-       public int Quantity { get; set; } 
+        public Articulo Articulo { get; set; } 
+        public int Quantity { get; set; } 
+
+        public decimal subtotal { get; set; }
         
     }
 }

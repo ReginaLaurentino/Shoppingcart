@@ -4,7 +4,7 @@
     <asp:Label Text="a" ID="lblSeleccionado" runat="server" />
     <asp:Label Text="s" ID="lblDescripcion" runat="server" />
       <label for="quantity"> Cantidad</label>   
-    <asp:TextBox TextMode="Number" ID="txtCantidad"  type="number" runat="server" min="1" max="20" step="1" Text="0"/>
+    <asp:TextBox TextMode="Number" ID="txtCantidad"  type="number" runat="server" min="1" max="20" step="1" Text="1"/>
       
 
     <asp:Button ID="Agregar" runat="server" Text="Agregar al carrito" OnClick="Agregar_Click" />

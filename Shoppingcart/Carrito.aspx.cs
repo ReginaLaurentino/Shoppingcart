@@ -20,6 +20,9 @@ namespace Shoppingcart
             try
             {
                 carrito = (List<Cart>)Session["listacarrito"];
+                
+                decimal su= carrito.Sum(x => x.subtotal);
+                lblTotal.Text = Convert.ToString(su);
                 //holis
 
             }
