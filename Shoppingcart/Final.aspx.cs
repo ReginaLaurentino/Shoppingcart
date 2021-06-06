@@ -11,7 +11,12 @@ namespace Shoppingcart
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var estado = Request.QueryString["estado"];
+            if(estado == "compro")
+            {
+                WebForm3 final = new WebForm3();
+                final.limpiarlista();
+            }
         }
     }
 }

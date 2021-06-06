@@ -119,5 +119,10 @@ namespace Shoppingcart
 
 
         }
+
+        public void limpiarlista()
+        {
+            carrito.Clear();
+        }
     }
 }
