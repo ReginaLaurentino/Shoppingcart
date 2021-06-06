@@ -65,7 +65,7 @@
     </div>        
     <br /><br />
     <div class="form-group"> 
-        <a href="Final.aspx" class="btn btn-primary">Comprar!</a>
+        <a href="Final.aspx?estado=compro" class="btn btn-primary">Comprar!</a>
     </div>     
     
 </form>
