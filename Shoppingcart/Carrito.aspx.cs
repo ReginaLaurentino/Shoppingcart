@@ -30,10 +30,11 @@ namespace Shoppingcart
                 carrito = (List<Cart>)Session["listacarrito"];
                 
                 decimal su= carrito.Sum(x => x.subtotal);
-               lblTotal.Text = Convert.ToString(su);
-
+                var aux = su.ToString("0.00");
+               lblTotal.Text = aux;
+                
                 //holis
-               
+
 
                 var pid = (Request.QueryString["id"]);
                 var evento = Request.QueryString["evento"];
@@ -69,11 +70,6 @@ namespace Shoppingcart
            
         }
 
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-
-
-        }
 
         protected void btnvaciar_carrito(object sender, EventArgs e)
         {
