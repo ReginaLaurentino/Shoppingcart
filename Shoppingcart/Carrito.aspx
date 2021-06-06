@@ -5,9 +5,9 @@
       <table class="table">
         <tr>
             <td>Nombre</td>
-            <td>Acción</td>
+            <td></td>
             <td>Cantidad</td>
-            <td>Agregar</td>
+            <td></td>
             <td>Total</td>
         </tr>
 
@@ -17,8 +17,9 @@
                 <tr>
                     <td><%#Eval("Articulo.Nombre")%></td>
                     <td>
-                        <%--<asp:Button ID="btnEliminar" CssClass="btn btn-primary" Text="Eliminar" CommandArgument='<%#Eval("Id")%>' CommandName="idPokemon" runat="server" OnClick="btnEliminar_Click" />--%>
-                        <asp:Button Text="Eliminar" CssClass="btn btn-primary" ID="btnEliminar2" OnClick="btnEliminar_Click" CommandArgument='<%#Eval("Articulo.Id")%>' runat="server" />
+                        
+                     <asp:Button Text="Eliminar" CssClass="btn btn-primary"  ID="btnEliminar2" OnClick="btnEliminar_Click" CommandArgument='<%#Eval("Articulo.Id")%>' runat="server"  />
+
                     </td>
                     <td>
                         <asp:TextBox TextMode="Number" ID="sumar" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />
@@ -35,19 +36,52 @@
 
             </ItemTemplate>
         </asp:Repeater>
-
-
+            
     </table>
 
-       <%if (carrito == null) {   %> 
+    <div class="container">    
+   
+
+              
+        <%foreach ( Shoppingcart.Cart item in carrito)
+            { %>
+
+             <div class="items">
+                 <p><%= item.Articulo.Nombre %></p>
+             </div>
+            <div class="items">
+                <p>Eliminar</p>
+            </div>
+            <div class="items">
+                <p>Menos</p>
+            </div>
+            <div class="items">
+                <p><%= item.Quantity %></p>
+            </div>
+            <div class="items">
+                 <a href="Carrito.aspx?id=<%=item.Articulo.ID %>" ><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="items">
+                <p><%= item.subtotal %></p>
+            </div>   
+
+   
+     
+        <%  } %>
+
+
+     </div>
+
+       <%if (carrito == null || carrito.Count()==0 ) {   %> 
                 <center>
                      <img src="./carrito_vacio_nuevo.png" alt="Imagen no encontrada" text="align-center" />
                 </center>
                   
            
-               <% }  %>
-
-
+        <% }  %>
+        <%else{ %>
+        <asp:Button Text="Vaciar carrito" CssClass="btn btn-primary" ID="Btnvaciar" OnClick="btnvaciar_carrito"  runat="server" />
+        <% }  %>
 
 
                      

@@ -7,11 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
+
+
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -26,7 +25,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" href="/Inicio">Inicio</a>
                         <a class="nav-link" href="/ListaProd">Productos</a>
                         <a class="nav-link" href="/Carrito">Mi Carrito</a>
                     </div>
@@ -37,17 +36,18 @@
 
 
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >
            </asp:ContentPlaceHolder>
             <hr />
-            <footer class="py-4 bg-dark flex-shrink-0" position="absolute" bottom="0" width="100%" height="40px">
+
+        </div>
+                    <footer class="py-4 bg-dark flex-shrink-0" position="absolute" bottom="0" width="100%" height="40px">
                     <div class="container text-center  bg-dark">
                       <p class="text-muted">Laura Elena Srebernich & Yesica Regina Laurentino Goncalves</p>
                     </div>
             </footer>
                  
-        </div>
-
     </form>
 </body>
 </html>
