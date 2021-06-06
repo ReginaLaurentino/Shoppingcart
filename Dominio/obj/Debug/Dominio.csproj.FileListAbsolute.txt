@@ -34,3 +34,12 @@ E:\UTN\PROG 3\Shopping cart\Shoppingcart\Dominio\obj\Debug\Dominio.csproj.Genera
 E:\UTN\PROG 3\Shopping cart\Shoppingcart\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 E:\UTN\PROG 3\Shopping cart\Shoppingcart\Dominio\obj\Debug\Dominio.dll
 E:\UTN\PROG 3\Shopping cart\Shoppingcart\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\bin\Debug\Dominio.dll.config
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\bin\Debug\Dominio.dll
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\obj\Debug\Dominio.Properties.Resources.resources
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\obj\Debug\Dominio.csproj.GenerateResource.cache
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\obj\Debug\Dominio.dll
+C:\Users\Laura\Desktop\aaa\Shoppingcart\Dominio\obj\Debug\Dominio.pdb

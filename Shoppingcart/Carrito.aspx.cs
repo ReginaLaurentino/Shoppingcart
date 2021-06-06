@@ -13,7 +13,7 @@ namespace Shoppingcart
     {
 
         public static List<Cart> carrito;
-        int cantidad = 1, id=0;
+        int cantidad = 2, id=0;
 
         //public List<Articulo> lista;
         protected void Page_Load(object sender, EventArgs e)
@@ -21,7 +21,9 @@ namespace Shoppingcart
             
             try
             {
-                if(carrito == null)
+                
+
+                if (carrito == null)
                 {
 
                 }
@@ -39,8 +41,13 @@ namespace Shoppingcart
                     repetidor.DataBind();
                 }
 
-                
+                var pid = (Request.QueryString["id"]);
+                id = Convert.ToInt32(pid);
 
+                if (id > 0)
+                {
+                    modificar(id);
+                }
 
 
             }
@@ -53,8 +60,8 @@ namespace Shoppingcart
         protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
            var cantidades =  ((TextBox)sender).Text;
-            cantidad = Convert.ToInt32(cantidades);   
-
+           cantidad = Convert.ToInt32(cantidades);   
+            
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
@@ -74,22 +81,32 @@ namespace Shoppingcart
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            var productid = ((Button)sender).CommandArgument;
-            id = Convert.ToInt32(productid);
-           
-            foreach (Shoppingcart.Cart item in carrito)
-            {
-                if (item.Articulo.ID ==id)
-                {
-                    item.Quantity = cantidad;
-                    Response.Redirect("Carrito.aspx");
-                    
-                }
-            }
-
 
         }
 
+        protected void btnvaciar_carrito(object sender, EventArgs e)
+        {
+            carrito.Clear();
+            Response.Redirect("Carrito.aspx");
+        }
 
+        protected void modificar(int id)
+        {
+            var reemplazo = new Cart { };
+            foreach (Shoppingcart.Cart item in carrito)
+            {
+                if (item.Articulo.ID == id)
+                {
+                    reemplazo.Articulo = item.Articulo;
+                    reemplazo.Quantity = cantidad;
+                    reemplazo.subtotal = (cantidad * item.Articulo.Precio);
+                    
+                }
+            }
+            var eindex = carrito.FindIndex(i => i.Articulo.ID == reemplazo.Articulo.ID);
+            carrito[eindex] = reemplazo;
+            Response.Redirect("Carrito.aspx");
+
+        }
     }
 }
