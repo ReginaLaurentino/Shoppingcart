@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detalleproducto.aspx.cs" Inherits="Shoppingcart.Detalleproducto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<h1>Producto</h1>
+
       <section class="bg-light">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-lg-5 mt-5">
                     <div class="card mb-3">
-                      <asp:Image class="card-img img-fluid"  alt="Card image cap" id="imagen"  runat="server" />
+                      <asp:Image class="card-img img-fluid"  alt="Imagen no disponible" onerror="this.src='./ind.jpeg';" id="imagen"  runat="server" />
                     </div>
                     <div class="row">
                         
@@ -45,7 +45,7 @@
                                
                                 <div class="row pb-3">
                                     <div class="col d-grid">
-                                        <button type="submit" class="btn btn-primary btn-lg" name="submit" value="buy">Buy</button>
+                                     <a href="Comprar.aspx" class="btn btn-primary btn-lg">Comprar</a>
                                     </div>
                                     <div class="col d-grid">
                                      <asp:button type="submit" ID="Agregar" class="btn btn-primary btn-lg" name="submit" text="Agregar al carrito" OnClick="Agregar_Click" runat="server"></asp:button>
