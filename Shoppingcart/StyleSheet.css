@@ -1,8 +1,11 @@
 ﻿body {
 }
 
-.container{
-    display:grid;
+.container ul{
+    display:inline-flex;
+    justify-content:space-around;
+    align-items:center;
+    list-style:none;
 }
 
 .item{

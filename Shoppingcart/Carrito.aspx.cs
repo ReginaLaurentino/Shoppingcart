@@ -13,7 +13,7 @@ namespace Shoppingcart
     {
 
         public static List<Cart> carrito;
-        int cantidad = 2, id=0;
+        int cantidad = 1, id=0;
 
         //public List<Articulo> lista;
         protected void Page_Load(object sender, EventArgs e)
@@ -30,24 +30,19 @@ namespace Shoppingcart
                 carrito = (List<Cart>)Session["listacarrito"];
                 
                 decimal su= carrito.Sum(x => x.subtotal);
-                //lblTotal.Text = Convert.ToString(su);
+               lblTotal.Text = Convert.ToString(su);
 
                 //holis
-                if (!IsPostBack)
-                {
-                    
-                    //Repeater
-                    repetidor.DataSource = carrito;
-                    repetidor.DataBind();
-                }
+               
 
                 var pid = (Request.QueryString["id"]);
-                id = Convert.ToInt32(pid);
+                var evento = Request.QueryString["evento"];
+              id = Convert.ToInt32(pid);
 
-                if (id > 0)
-                {
-                    modificar(id);
-                }
+                if (evento == "sumar") modificar(id);
+                if (evento == "menos") restar(id);
+                if (evento == "eliminar") Eliminar(id);
+
 
 
             }
@@ -64,18 +59,14 @@ namespace Shoppingcart
             
         }
 
-        protected void btnEliminar_Click(object sender, EventArgs e)
+        protected void Eliminar(int id)
         {
-            
-            var argument = ((Button)sender).CommandArgument;
+           
             List<Cart> eliminado = (List<Cart>)Session["listacarrito"];
-            Cart elim = eliminado.Find(x => x.Articulo.ID.ToString() == argument);
+            Cart elim = eliminado.Find(x => x.Articulo.ID == id);
             eliminado.Remove(elim);
             Session.Add("listacarrito", eliminado);
-            repetidor.DataSource = null;
-            repetidor.DataSource = eliminado;
-            repetidor.DataBind();
-
+           
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
@@ -98,14 +89,38 @@ namespace Shoppingcart
                 if (item.Articulo.ID == id)
                 {
                     reemplazo.Articulo = item.Articulo;
-                    reemplazo.Quantity = cantidad;
-                    reemplazo.subtotal = (cantidad * item.Articulo.Precio);
+                    reemplazo.Quantity =item.Quantity+1;
+                    reemplazo.subtotal = (reemplazo.Quantity* item.Articulo.Precio);
                     
                 }
             }
             var eindex = carrito.FindIndex(i => i.Articulo.ID == reemplazo.Articulo.ID);
+          
             carrito[eindex] = reemplazo;
             Response.Redirect("Carrito.aspx");
+
+
+        }
+
+        protected void restar(int id)
+        {
+            var reemplazo = new Cart { };
+            foreach (Shoppingcart.Cart item in carrito)
+            {
+                if (item.Articulo.ID == id)
+                {
+                    reemplazo.Articulo = item.Articulo;
+                    reemplazo.Quantity = item.Quantity -1;
+                    if (reemplazo.Quantity <= 1) reemplazo.Quantity = 1; 
+                    reemplazo.subtotal = (reemplazo.Quantity * item.Articulo.Precio);
+
+                }
+            }
+            var eindex = carrito.FindIndex(i => i.Articulo.ID == reemplazo.Articulo.ID);
+
+            carrito[eindex] = reemplazo;
+            Response.Redirect("Carrito.aspx");
+
 
         }
     }
