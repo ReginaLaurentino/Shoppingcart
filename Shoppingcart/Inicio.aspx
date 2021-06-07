@@ -3,7 +3,7 @@
 
     <center>
         <h1>Bienvenido!</h1>
-        <img src="./ini.jpg" alt="Imagen no encontrada"  width="1250rem" />
+        <img src="./ini.jpg" alt="Imagen no encontrada"  />
         <br />
         <br />
         <a href="ListaProd.aspx" class="btn btn-primary">Comenzar a comprar</a>
