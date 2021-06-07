@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="Shoppingcart.WebForm3" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Mi carrito<i class="fas fa-shopping-cart"></i>
-</h1>
+    <h1>Mi carrito<i class="fas fa-shopping-cart"></i></h1>
 
 
     <%if (carrito == null || carrito.Count() == 0)
