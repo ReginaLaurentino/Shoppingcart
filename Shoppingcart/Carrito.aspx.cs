@@ -14,6 +14,7 @@ namespace Shoppingcart
 
         public static List<Cart> carrito;
         int cantidad = 1, id=0;
+        int sumacar = 0;
 
         //public List<Articulo> lista;
         protected void Page_Load(object sender, EventArgs e)
@@ -74,6 +75,7 @@ namespace Shoppingcart
         protected void btnvaciar_carrito(object sender, EventArgs e)
         {
             carrito.Clear();
+            sumacar = 0;
             Response.Redirect("Carrito.aspx");
         }
 
@@ -123,6 +125,20 @@ namespace Shoppingcart
         public void limpiarlista()
         {
             carrito.Clear();
+            sumacar = 0;
+        }
+
+        public int sumacarrito()
+        {
+            if (carrito!=null)
+            {
+                foreach (Shoppingcart.Cart item in carrito)
+                {
+                    sumacar += item.Quantity;
+                }
+            }
+                return sumacar;
+
         }
     }
 }
